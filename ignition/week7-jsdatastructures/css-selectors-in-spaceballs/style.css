@@ -1,0 +1,31 @@
+h4 {
+  font-size: 24px;
+  text-decoration: underline;
+  font-weight: normal;
+}
+.helmet {
+  color: #0077CC;
+}
+.corporal {
+  color: #EE6363;
+}
+.sandurz {
+  color: #8EA142;
+}
+.dialog {
+  font-size: 16px;
+  font-weight: 300;
+}
+.stage-direction {
+  text-align: center;
+  color: #362819;
+}
+div.corporal > h4 {
+  color: #CD4242;
+}
+div.helmet > h4 {
+  color: #0A4670;
+}
+div.sandurz > h4 {
+  color: #3E4814;
+}

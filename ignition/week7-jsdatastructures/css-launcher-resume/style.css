@@ -1,0 +1,15 @@
+body {
+  color: #cc4125;
+  font-style: italic;
+}
+h1 {
+  font-size: 70px;
+  color: #a4c2f4;
+  font-style: oblique;
+  font-family: Veranda, Ariel, monospace;
+}
+
+p {
+  text-decoration: underline;
+  font-style: normal;
+}
