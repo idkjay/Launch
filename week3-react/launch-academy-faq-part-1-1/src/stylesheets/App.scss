@@ -1,0 +1,51 @@
+/* YOUR STYLING HERE */
+.button.buttonTrue,.button.buttonTrue:hover, .button.buttonTrue:active {
+  background-color: #84CE15;
+  box-shadow: 3px 3px 3px #000;
+  margin-right: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+
+}
+
+.button, .button:hover, .button:active {
+  background-color: black;
+  box-shadow: 3px 3px 3px #000;
+  margin-right: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+
+}
+
+body {
+  background-color: #E5F3F4;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #8A837B;
+}
+
+p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+h1 {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-weight:bold;
+  color: #36BECC;
+}
+hr {
+    display: block;
+    background-color: #989D9D;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttonBox {
+  border-bottom: 5px solid;
+
+  margin-left: 5px;
+  margin-right: 5px;
+}
