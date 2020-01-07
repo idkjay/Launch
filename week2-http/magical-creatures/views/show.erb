@@ -1,0 +1,9 @@
+<h1><%=@new_creature.name.capitalize()%></h1>
+
+
+<h2>Ability: <%=@new_creature.ability %> </h2>
+<h2>Age: <%=@new_creature.age  %></h2>
+<h2>
+  Ancient Creature: <%= @new_creature.ancient? %>
+</h2>
+<br /> <a href="/creatures">Return to List of Magical Creatures</a>
