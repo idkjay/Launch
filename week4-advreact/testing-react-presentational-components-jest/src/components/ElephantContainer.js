@@ -23,7 +23,11 @@ const ElephantContainer = props => {
 
   return (
     <div>
-      <Elephant image={image} onClick={handleClick} text={text} />
+      <Elephant
+        image={image}
+        onClick={handleClick}
+        text={text}
+      />
     </div>
   )
 }
