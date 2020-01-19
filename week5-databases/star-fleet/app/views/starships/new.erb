@@ -1,0 +1,21 @@
+<h1>Add New Starship</h1>
+
+
+<form method="POST" action="/starships/new">
+
+  <label for="ship_name">Ship Name:</label>
+  <input type="text" name="ship_name" value="<%=@ship_name%>"><br>
+
+  <label for="ship_class">Ship Class:</label>
+  <input type="text" name="ship_class" value="<%=@ship_class%>"><br>
+
+  <label for="ship_location">Ship Location:</label>
+  <input type="text" name="ship_location" value="<%=@ship_location%>"><br>
+
+
+
+  <button class="button" type="submit">Add Starship</button>
+</form>
+
+<br>
+<a class="back" href="/">Back to All Starships</a>

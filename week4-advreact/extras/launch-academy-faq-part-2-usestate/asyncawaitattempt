@@ -1,0 +1,17 @@
+//async attempt regenerator runtime error??
+// useEffect(() => {
+//   const fetchData = async () => {
+//     let response = await fetch('/api/v1/questions');
+//     response => response.json();
+//     setQuestions(response);
+//   }
+//   fetchData();
+// }, [])
+
+useEffect(() => {
+  fetch('/api/v1/questions')
+  .then(response => response.json())
+  .then(response => {
+    setQuestions(response)
+  })
+},[])

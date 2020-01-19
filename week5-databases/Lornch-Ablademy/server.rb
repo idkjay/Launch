@@ -33,7 +33,6 @@ get '/clinics/:id' do
   @clinic = Clinic.find(params["id"])
   @comments = @clinic.comments
   @students = @clinic.students
-
   erb :'clinics/show'
 end
 
@@ -43,8 +42,7 @@ get '/students' do
 end
 
 get '/students/:id' do
-  @student - Student.find(params[:id])
+  @student = Student.find(params["id"])
   @clinics = @student.clinics
-
   erb :'students/show'
 end

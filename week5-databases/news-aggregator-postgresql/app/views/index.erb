@@ -1,0 +1,13 @@
+<h1>What it doopee doopee dooooo</h1></h1>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li> <a href="/articles/<%="#{article.id}"%>"><%=article.title%>:
+      <%=article.description%>
+    </li>
+  <%end%>
+</ul>
+
+<h4 class="new"><a href="/articles/new">Add a New Article</a></h4>
+
+<h4 class="new"><a href="/random">Random Article</a></h4>

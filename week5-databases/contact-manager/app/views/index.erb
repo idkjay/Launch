@@ -1,0 +1,14 @@
+<h1>Contacts</h1>
+
+<ul>
+  <% if @contacts %>
+    <% @contacts.each do |contact| %>
+      <li><a href="/contacts/<%="#{contact.id}"%>">
+        Name: <%= contact.name %> || Phone number: <%= contact.phone_number %>
+        <br>
+      </li>
+    <% end %>
+  <% end %>
+</ul
+
+<h4 class="new"><a href="/contacts/new">Add a New Contact</a></h4>

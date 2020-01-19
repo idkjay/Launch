@@ -1,0 +1,19 @@
+<h1>Crew Members</h1>
+
+
+<ul>
+  <% if @members %>
+    <% @members.each do |member| %>
+      <li>
+        <a href="/crew-members/<%="#{member.id}"%>">
+        Name: <%= member.first_name %> <%= member.last_name %> || Specialty Division: <%= member.specialty_division %>
+        <br>
+      </li>
+    <% end %>
+  <% end %>
+</ul
+
+
+<h4 class="new"><a href="/starships/new">Add a New Starship</a></h4>
+<br>
+<a class="back" href="/">Back to All Starships</a>
