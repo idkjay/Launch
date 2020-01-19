@@ -1,0 +1,10 @@
+<h1>List of Magical Creatures</h1>
+
+<ul>
+  <% @creatures_array.each do |creature| %>
+    <li>
+      <h2><a href = "/creatures/<%= creature.name%>"><%= creature.name.capitalize()%></a><br /></h2>
+    </li>
+  <% end %>
+</ul>
+<br /> <a href="/home">Return to Home</a>
