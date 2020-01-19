@@ -1,9 +1,0 @@
----
-title: "Weather.js"
-type: "exercise"  # challenge, exercise, article, video
-description: "Get the current weather conditions."
-tags: "javascript, fetch"
-behaviors:
-  - sinatra
-ignore:
-- "weather-js.md"
