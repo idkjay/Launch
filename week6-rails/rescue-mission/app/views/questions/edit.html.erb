@@ -1,0 +1,12 @@
+<div class="commentbox callout primary">
+  <h1>Edit Question</h1>
+  <%= form_for(@question) do |f| %>
+  <%= f.label :title, "Title:" %><br />
+  <%= f.text_field :title %>
+
+  <%= f.label :description, "Description:" %><br />
+  <%= f.text_field :description %>
+  <%= f.submit "Save changes", class: "button expanded float-center"%>
+  <% end %>
+
+</div>

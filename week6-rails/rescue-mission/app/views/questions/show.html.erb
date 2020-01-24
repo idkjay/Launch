@@ -1,0 +1,39 @@
+<div class="callout primary">
+  <h1>Question:</h1>
+  <strong>
+    <%= @question.title %>
+  </strong>
+  <br />
+  <p>
+    <%= @question.description %>
+  </p>
+  <div class="small-button-group">
+
+    <%= link_to "Edit", edit_question_path(@question),class:"button" %>
+    <%= link_to "Delete", @question, method: :delete, data: { confirm: "You sure?"},class:"button"  %>
+  </div>
+</div>
+<div class="callout primary">
+
+  <h2 class="hf ">All Comments:</h2>
+  <div class="commentbox">
+    <%= form_for [@question, @answer] do |f| %>
+    <%= f.label :description, "&nbsp;".html_safe %><br />
+    <%= f.text_field :description %>
+    <%= f.submit "Save", class:"button expanded"%>
+    <% end %>
+  </div>
+  <div class="commentbox callout">
+
+    <ul class="bullet">
+      <% @answers.each do |answer| %>
+      <li>
+        <%= answer.description%> <div class="floatright">
+           | <%= answer.created_at.strftime("%m/%d/%y") %>
+        </div>
+      </li>
+      <br>
+      <%end%>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="callout primary">
+  <h1>Questions List</h1>
+  <ul class="bullet">
+    <% @questions.each do |question| %>
+    <li>
+      <%= link_to question.title, question_path(question)%>
+      <div class="floatright">
+        <%= question.created_at.strftime("%B %d %Y") %> - 
+        <%= link_to "Edit", edit_question_path(question)%> | <%= link_to "Delete", question, method: :delete, data: { confirm: "You sure?"}  %>
+
+      </div>
+
+    </li>
+    <%end%>
+  </ul>
+
+</div>
+
+<h1><%= link_to "New Question", "/questions/new", class:"button float-center"%></h1>

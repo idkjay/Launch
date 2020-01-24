@@ -1,0 +1,23 @@
+<h2>Journal Details Page: <%= @journal.name %></h2>
+<h4>Year: <%= @journal.year %> </h4>
+<h4>Author: <%= @journal.author %> </h4>
+
+<div class="callout panel align-center grid-x">
+
+<% if !@journal.description.nil? %>
+  <p>
+    <%= @journal.description %>
+  </p>
+<% end %>
+</div>
+
+<h4>Entries:</h4>
+<ol>
+<% if !@journal.entries.nil? %>
+  <% @entries.each do |entry| %>
+    <li>      
+      <%= entry.title %>
+    </li>
+  <% end %>
+<% end %>
+</ol>

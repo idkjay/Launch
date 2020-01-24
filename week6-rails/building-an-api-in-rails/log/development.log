@@ -1,0 +1,132 @@
+Started GET "/api/v1/campers" for ::1 at 2020-01-22 18:04:28 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CampersController#index as HTML
+  [1m[36mCamper Load (3.6ms)[0m  [1m[34mSELECT "campers".* FROM "campers"[0m
+Completed 200 OK in 26ms (Views: 7.0ms | ActiveRecord: 8.7ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCampsite Create (0.5ms)[0m  [1m[32mINSERT INTO "campsites" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2020-01-22 23:04:45.921791"], ["updated_at", "2020-01-22 23:04:45.921791"]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCampsite Create (0.3ms)[0m  [1m[32mINSERT INTO "campsites" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Beta"], ["created_at", "2020-01-22 23:04:45.925197"], ["updated_at", "2020-01-22 23:04:45.925197"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCampsite Create (0.2ms)[0m  [1m[32mINSERT INTO "campsites" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Gamma"], ["created_at", "2020-01-22 23:04:45.926623"], ["updated_at", "2020-01-22 23:04:45.926623"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCampsite Create (0.3ms)[0m  [1m[32mINSERT INTO "campsites" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Delta"], ["created_at", "2020-01-22 23:04:45.927780"], ["updated_at", "2020-01-22 23:04:45.927780"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCamper Create (0.4ms)[0m  [1m[32mINSERT INTO "campers" ("name", "campsite_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Rovaira"], ["campsite_id", 5], ["created_at", "2020-01-22 23:04:45.942068"], ["updated_at", "2020-01-22 23:04:45.942068"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCamper Create (0.2ms)[0m  [1m[32mINSERT INTO "campers" ("name", "campsite_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Jorge"], ["campsite_id", 5], ["created_at", "2020-01-22 23:04:45.943680"], ["updated_at", "2020-01-22 23:04:45.943680"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCamper Create (0.2ms)[0m  [1m[32mINSERT INTO "campers" ("name", "campsite_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Brian"], ["campsite_id", 5], ["created_at", "2020-01-22 23:04:45.944943"], ["updated_at", "2020-01-22 23:04:45.944943"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCamper Create (0.3ms)[0m  [1m[32mINSERT INTO "campers" ("name", "campsite_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Jesse"], ["campsite_id", 6], ["created_at", "2020-01-22 23:04:45.946198"], ["updated_at", "2020-01-22 23:04:45.946198"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCamper Create (0.2ms)[0m  [1m[32mINSERT INTO "campers" ("name", "campsite_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Maribeth"], ["campsite_id", 6], ["created_at", "2020-01-22 23:04:45.947500"], ["updated_at", "2020-01-22 23:04:45.947500"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCamper Create (0.2ms)[0m  [1m[32mINSERT INTO "campers" ("name", "campsite_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Kelly"], ["campsite_id", 6], ["created_at", "2020-01-22 23:04:45.948707"], ["updated_at", "2020-01-22 23:04:45.948707"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCamper Create (0.2ms)[0m  [1m[32mINSERT INTO "campers" ("name", "campsite_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "David"], ["campsite_id", 7], ["created_at", "2020-01-22 23:04:45.949864"], ["updated_at", "2020-01-22 23:04:45.949864"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCamper Create (0.2ms)[0m  [1m[32mINSERT INTO "campers" ("name", "campsite_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Phillip"], ["campsite_id", 7], ["created_at", "2020-01-22 23:04:45.950973"], ["updated_at", "2020-01-22 23:04:45.950973"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCamper Create (0.2ms)[0m  [1m[32mINSERT INTO "campers" ("name", "campsite_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Kevin"], ["campsite_id", 7], ["created_at", "2020-01-22 23:04:45.952095"], ["updated_at", "2020-01-22 23:04:45.952095"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSupply Create (0.4ms)[0m  [1m[32mINSERT INTO "supplies" ("name", "camper_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Eggs"], ["camper_id", 10], ["created_at", "2020-01-22 23:04:45.960648"], ["updated_at", "2020-01-22 23:04:45.960648"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSupply Create (0.2ms)[0m  [1m[32mINSERT INTO "supplies" ("name", "camper_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Bacon"], ["camper_id", 17], ["created_at", "2020-01-22 23:04:45.962158"], ["updated_at", "2020-01-22 23:04:45.962158"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSupply Create (0.3ms)[0m  [1m[32mINSERT INTO "supplies" ("name", "camper_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Plates"], ["camper_id", 16], ["created_at", "2020-01-22 23:04:45.963364"], ["updated_at", "2020-01-22 23:04:45.963364"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSupply Create (0.2ms)[0m  [1m[32mINSERT INTO "supplies" ("name", "camper_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Blankets"], ["camper_id", 13], ["created_at", "2020-01-22 23:04:45.964665"], ["updated_at", "2020-01-22 23:04:45.964665"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSupply Create (0.2ms)[0m  [1m[32mINSERT INTO "supplies" ("name", "camper_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sleeping Bags"], ["camper_id", 11], ["created_at", "2020-01-22 23:04:45.965768"], ["updated_at", "2020-01-22 23:04:45.965768"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSupply Create (0.2ms)[0m  [1m[32mINSERT INTO "supplies" ("name", "camper_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cups"], ["camper_id", 12], ["created_at", "2020-01-22 23:04:45.966846"], ["updated_at", "2020-01-22 23:04:45.966846"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSupply Create (0.2ms)[0m  [1m[32mINSERT INTO "supplies" ("name", "camper_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Machete"], ["camper_id", 14], ["created_at", "2020-01-22 23:04:45.967964"], ["updated_at", "2020-01-22 23:04:45.967964"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSupply Create (0.2ms)[0m  [1m[32mINSERT INTO "supplies" ("name", "camper_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "trash bags"], ["camper_id", 15], ["created_at", "2020-01-22 23:04:45.969048"], ["updated_at", "2020-01-22 23:04:45.969048"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSupply Create (0.2ms)[0m  [1m[32mINSERT INTO "supplies" ("name", "camper_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "compass"], ["camper_id", 15], ["created_at", "2020-01-22 23:04:45.970111"], ["updated_at", "2020-01-22 23:04:45.970111"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSupply Create (0.2ms)[0m  [1m[32mINSERT INTO "supplies" ("name", "camper_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Fire logs"], ["camper_id", 17], ["created_at", "2020-01-22 23:04:45.971173"], ["updated_at", "2020-01-22 23:04:45.971173"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSupply Create (0.2ms)[0m  [1m[32mINSERT INTO "supplies" ("name", "camper_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "pocket knife"], ["camper_id", 10], ["created_at", "2020-01-22 23:04:45.972270"], ["updated_at", "2020-01-22 23:04:45.972270"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/campers" for ::1 at 2020-01-22 18:04:55 -0500
+Processing by Api::V1::CampersController#index as HTML
+  [1m[36mCamper Load (0.4ms)[0m  [1m[34mSELECT "campers".* FROM "campers"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4651063373634777225)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSupplies (20151215041127)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.0ms)[0m  [1m[35mDROP TABLE "supplies"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20151215041127"]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4651063373634777225)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api/v1/campers" for ::1 at 2020-01-22 18:05:42 -0500
+Processing by Api::V1::CampersController#index as HTML
+  [1m[36mCamper Load (0.3ms)[0m  [1m[34mSELECT "campers".* FROM "campers"[0m
+Completed 200 OK in 14ms (Views: 5.4ms | ActiveRecord: 5.5ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4651063373634777225)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSupplies (20151215041127)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE TABLE "supplies" ("id" bigserial primary key, "name" character varying, "camper_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_supplies_on_camper_id" ON "supplies"  ("camper_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20151215041127"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4651063373634777225)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api/v1/campers" for ::1 at 2020-01-22 18:08:20 -0500
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CampersController#index as HTML
+  [1m[36mCamper Load (0.6ms)[0m  [1m[34mSELECT "campers".* FROM "campers"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (2.68ms)
+Completed 200 OK in 29ms (Views: 16.1ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/api/v1/campers" for ::1 at 2020-01-22 18:08:45 -0500
+Processing by Api::V1::CampersController#index as HTML
+  [1m[36mCamper Load (0.4ms)[0m  [1m[34mSELECT "campers".* FROM "campers"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.61ms)
+Completed 200 OK in 15ms (Views: 7.1ms | ActiveRecord: 4.4ms)
+
+
