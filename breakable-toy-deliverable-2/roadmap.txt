@@ -1,0 +1,3 @@
+https://docs.google.com/document/d/1Z8XIG9Hfc4H18PyAKtHBxJs1AwZzKiBCatvDx-Rlzx4/edit?usp=sharing
+
+Link contains User Stories and Acceptance Criteria, Brief Description, and a link to my ER diagram (though I do have a picture of it in the doc).
